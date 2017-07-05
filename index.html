@@ -3,33 +3,43 @@
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
     <title>Form Letter</title>
   </head>
   <body>
     <div class="container">
       <h1>Fill in your name and receive your letter!</h1>
-      <div>
-        <form id="formOne">
-          <div class="form-group">
-            <label for="name">Your name</label>
-            <input id="name" class="form-control" type="text">
+
+      <form id="formOne">
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+
+      <div class="well">
+        <div class="row" id="letter">
+          <div class="col-md-6">
+            <p>Dear <span class="name"></span>,
+            <p>
+            Bacon ipsum dolor amet beef cow chicken, short loin drumstick corned beef salami. Ball tip alcatra capicola short ribs, picanha brisket boudin ham. Beef ribs hamburger corned beef short ribs pork belly picanha. Pancetta spare ribs flank burgdoggen biltong rump ribeye swine landjaeger. Meatloaf beef ribs burgdoggen, shoulder chicken tenderloin salami boudin pork belly pastrami. Cupim venison picanha beef pork loin shankle tongue turducken short ribs t-bone ground round. Tongue kevin turkey t-bone meatloaf pork chop.
+            </p>
+            <p>
+            Capicola ribeye kielbasa landjaeger tongue meatball picanha beef swine shank pork belly. Strip steak kielbasa venison cow, short ribs ribeye pancetta alcatra jowl tail jerky brisket. Chicken capicola drumstick short ribs corned beef tongue shankle t-bone jerky. Brisket porchetta tenderloin ball tip drumstick. Corned beef drumstick landjaeger, strip steak t-bone jerky sausage tri-tip spare ribs beef ham hock frankfurter. Beef burgdoggen ham hock jerky corned beef, kielbasa venison pancetta jowl alcatra flank hamburger tongue beef ribs biltong. Spare ribs sirloin strip steak alcatra brisket.
+            </p>
+            <p>
+            Corned beef tail filet mignon chuck cow picanha shoulder venison capicola sausage flank biltong. Rump meatloaf ham hock capicola prosciutto cow flank pork chop tongue filet mignon turducken alcatra jerky. Drumstick shankle jerky prosciutto cupim jowl, fatback strip steak pancetta t-bone tail ground round short loin kevin. T-bone tenderloin picanha pork chop pork loin doner. Sausage alcatra kielbasa kevin. Meatball t-bone pork belly drumstick chicken biltong jerky pork chop.
+            </p>
+            <p>Sincerely,</p>
+            <p>Bacon</p>
           </div>
 
-      <div id="letter">
-        <p>Dear <span class="name"></span>,
-        <p>
-        Bacon ipsum dolor amet beef cow chicken, short loin drumstick corned beef salami. Ball tip alcatra capicola short ribs, picanha brisket boudin ham. Beef ribs hamburger corned beef short ribs pork belly picanha. Pancetta spare ribs flank burgdoggen biltong rump ribeye swine landjaeger. Meatloaf beef ribs burgdoggen, shoulder chicken tenderloin salami boudin pork belly pastrami. Cupim venison picanha beef pork loin shankle tongue turducken short ribs t-bone ground round. Tongue kevin turkey t-bone meatloaf pork chop.
-        </p>
-        <p>
-        Capicola ribeye kielbasa landjaeger tongue meatball picanha beef swine shank pork belly. Strip steak kielbasa venison cow, short ribs ribeye pancetta alcatra jowl tail jerky brisket. Chicken capicola drumstick short ribs corned beef tongue shankle t-bone jerky. Brisket porchetta tenderloin ball tip drumstick. Corned beef drumstick landjaeger, strip steak t-bone jerky sausage tri-tip spare ribs beef ham hock frankfurter. Beef burgdoggen ham hock jerky corned beef, kielbasa venison pancetta jowl alcatra flank hamburger tongue beef ribs biltong. Spare ribs sirloin strip steak alcatra brisket.
-        </p>
-        <p>
-        Corned beef tail filet mignon chuck cow picanha shoulder venison capicola sausage flank biltong. Rump meatloaf ham hock capicola prosciutto cow flank pork chop tongue filet mignon turducken alcatra jerky. Drumstick shankle jerky prosciutto cupim jowl, fatback strip steak pancetta t-bone tail ground round short loin kevin. T-bone tenderloin picanha pork chop pork loin doner. Sausage alcatra kielbasa kevin. Meatball t-bone pork belly drumstick chicken biltong jerky pork chop.
-        </p>
-        <p>Sincerely,</p>
-        <p>Bacon</p>
+          <div class="col-md-6" id="address">
+            <h3><span class="name"></span><br>
+              1234 Park Avenue<br>
+            Madisonville, NY 34506</h3>
+          </div>
+        </div>
       </div>
     </div>
   </body>
